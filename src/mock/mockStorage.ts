@@ -1,4 +1,5 @@
 import type { PageMeta, PageResponse } from '@/utils/apiTypes';
+import type { MockDish } from './mockData';
 import {
   INITIAL_USERS,
   INITIAL_CATEGORIES,
