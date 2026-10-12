@@ -432,7 +432,7 @@ export const INITIAL_DISHES: MockDish[] = [
     price: 69000,
     unit: 'Chai',
     description: 'Bia thủ công vị thanh, hương hoa bia và vỏ cam tươi đặc trưng nồng độ cồn nhẹ dịu.',
-    image_url: 'https://images.unsplash.com/photo-1608270104670-36a8d8e574ad?auto=format&fit=crop&w=800&q=80',
+    image_url: 'https://unsplash.com/photos/a-glass-of-beer-next-to-a-can-of-milkshake-pale-ale-IlVqkaaM5B4',
     prep_time_minutes: 3,
     status: 'AVAILABLE',
     created_at: new Date(Date.now() - 2 * 86400000).toISOString(),
