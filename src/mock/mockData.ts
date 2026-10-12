@@ -425,7 +425,6 @@ export const INITIAL_DISHES: MockDish[] = [
     created_at: new Date(Date.now() - 3 * 86400000).toISOString(),
     updated_at: new Date(Date.now() - 3 * 86400000).toISOString(),
   },
-
   // Tráng miệng
   {
     id: '00000000-0000-4004-8000-000000000001',
