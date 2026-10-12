@@ -425,19 +425,6 @@ export const INITIAL_DISHES: MockDish[] = [
     created_at: new Date(Date.now() - 3 * 86400000).toISOString(),
     updated_at: new Date(Date.now() - 3 * 86400000).toISOString(),
   },
-  {
-    id: '00000000-0000-4003-8000-000000000005',
-    name: 'Bia craft Pale Ale thủ công',
-    category_id: '00000000-0000-4000-8000-000000000003',
-    price: 69000,
-    unit: 'Chai',
-    description: 'Bia thủ công vị thanh, hương hoa bia và vỏ cam tươi đặc trưng nồng độ cồn nhẹ dịu.',
-    image_url: 'https://unsplash.com/photos/a-glass-of-beer-next-to-a-can-of-milkshake-pale-ale-IlVqkaaM5B4',
-    prep_time_minutes: 3,
-    status: 'AVAILABLE',
-    created_at: new Date(Date.now() - 2 * 86400000).toISOString(),
-    updated_at: new Date(Date.now() - 2 * 86400000).toISOString(),
-  },
 
   // Tráng miệng
   {
