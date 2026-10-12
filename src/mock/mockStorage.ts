@@ -43,6 +43,18 @@ export function saveCollection<T>(key: string, items: T[]): void {
 // khóa phiên bản dữ liệu mẫu để tự động nâng cấp khi có cập nhật từ migration
 const DATA_VERSION_KEY = 'app_mock_version';
 const CURRENT_DATA_VERSION = 'v2';
+const REMOVED_DISH_ID = '00000000-0000-4003-8000-000000000005';
+const REMOVED_DISH_NAME = 'Bia craft Pale Ale thủ công';
+
+function removeDeletedSeedDish(): void {
+  const dishes = getCollection<MockDish>(STORAGE_KEYS.DISHES);
+  const remainingDishes = dishes.filter(
+    (dish) => dish.id !== REMOVED_DISH_ID && dish.name !== REMOVED_DISH_NAME
+  );
+  if (remainingDishes.length !== dishes.length) {
+    saveCollection(STORAGE_KEYS.DISHES, remainingDishes);
+  }
+}
 
 // khởi tạo dữ liệu mẫu nếu chưa có hoặc khi phiên bản dữ liệu được nâng cấp
 export function initSeedDataIfEmpty(): void {
@@ -74,6 +86,8 @@ export function initSeedDataIfEmpty(): void {
   if (!localStorage.getItem(STORAGE_KEYS.INVOICES)) {
     saveCollection(STORAGE_KEYS.INVOICES, INITIAL_INVOICES);
   }
+
+  removeDeletedSeedDish();
 }
 
 // khôi phục toàn bộ dữ liệu về trạng thái mẫu ban đầu
