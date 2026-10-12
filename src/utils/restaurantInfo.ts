@@ -1,7 +1,7 @@
 // thông tin nhà hàng hiển thị cho khách (SRS 3.1); đổi bằng biến môi trường VITE_RESTAURANT_* trong FE/.env
 export const RESTAURANT_INFO = {
   name: import.meta.env.VITE_RESTAURANT_NAME || 'FlavorHaven',
-  address: import.meta.env.VITE_RESTAURANT_ADDRESS || '123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh',
+  address: import.meta.env.VITE_RESTAURANT_ADDRESS || 'P. Nguyễn Trác, Dương Nội, Hà Nội',
   phone: import.meta.env.VITE_RESTAURANT_PHONE || '0283 123 4567',
   hours: import.meta.env.VITE_RESTAURANT_HOURS || '10:00 – 22:00 hằng ngày',
 };
